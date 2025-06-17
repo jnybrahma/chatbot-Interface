@@ -38,13 +38,13 @@ except:
 ### 3. Initialize the datastructure to hold the context
 MESSAGES='messages'
 if  MESSAGES not in st.session_state:
-    system_message  = Message(role=SYSTEM, payload='you are a polite assistant named "Ruby".')
+    system_message  = Message(role=SYSTEM, payload='Hi! I am your assistant :- "Ruby".')
     st.session_state[MESSAGES] = [system_message]
 
 ### 4. Setup the title & input text element for the Cohere API key
 #    Set the title
 #    Populate API key from session if it is available
-st.title("Multi-Turn conversation interface  !!!")
+st.title("This Multi-Turn conversation interface - Chatbot  !!!")
 
 # If the key is already available, initialize its value on the UI
 if 'COHERE_API_KEY' in st.session_state:
