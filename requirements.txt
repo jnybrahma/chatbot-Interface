@@ -1,0 +1,6 @@
+python-dotenv
+langchain
+cohere
+langchain-community
+dataclasses
+streamlit
